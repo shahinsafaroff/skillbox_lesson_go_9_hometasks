@@ -6,12 +6,10 @@ import (
 func main() {
 	var uint8Counter, uint16Counter int
 	for i := 1; i < math.MaxUint32; i++ {
-		type number1 uint16
-		type number2 uint8
-		if number1(i) == 0 {
+		if uint16(i) == 0 {
 			uint8Counter++
 		}
-		if number2(i) == 0 {
+		if uint8(i) == 0 {
 			uint16Counter++
 		}
 	}

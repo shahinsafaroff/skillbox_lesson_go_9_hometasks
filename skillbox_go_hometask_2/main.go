@@ -19,7 +19,7 @@ func main() {
 		fmt.Printf("Result of multiplication:  %d\nSuitable format: %T\n", result, int16(result))
 	case result < 0:
 		fmt.Printf("Result of multiplication: %d\nSuitable format: %T\n", result, int8(result))
-	case result >= 0 && result <= math.MaxUint8:
+	case result <= math.MaxUint8:
 		fmt.Printf("Result of multiplication: %d\nSuitable format: %T\n", result, uint8(result))
 	case result <= math.MaxUint16:
 		fmt.Printf("Result of multiplication: %d\nSuitable format: %T\n", result, uint16(result))
